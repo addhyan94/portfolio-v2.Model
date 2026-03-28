@@ -17,6 +17,11 @@ body{
     gap:300px;
 }
 
+.sign{
+    height:100px; 
+    width:100px;
+}
+
 /* Nav bar ke buttons per hover effect aayega isse .................... */
 .hover-underline {
   /* font-size: 2rem; */
@@ -124,4 +129,176 @@ body{
     margin-top:50px;
     color:white;
      font-family: Arial, Helvetica, sans-serif;
+}
+
+.skill-head{
+color:white;
+display:flex;
+justify-content: center;
+}
+
+.head{
+    margin-top:100px;
+    font-size: 60px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.skills{
+    color:white;
+     display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+    gap:50px;
+    margin:80px;
+    font-size:25px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.skill-1{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-2{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-3{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-4{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-5{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-6{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-7{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.skill-8{
+    border:1px solid purple;
+    border-radius: 50px;
+    padding:20px;
+    text-align: center;
+}
+
+.projectss{
+   display: grid;
+  grid-template-columns: repeat(3, 200px); /* 2 boxes per row */
+  justify-content: center; /* center align */
+  gap: 100px;
+  margin-top:100px;
+  color:white;
+}
+
+.project-head{
+    font-weight: bolder;
+     margin-top:100px;
+    font-size: 60px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     color:white;
+}
+
+.project-1{
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height:180px;
+    width:250px;
+}
+
+.project-2{
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height:180px;
+    width:250px;
+}
+
+.project-3{
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height:180px;
+    width:250px;
+}
+
+.project-4{
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height:180px;
+    width:250px;
+}
+
+.project-5{
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height:180px;
+    width:250px;
+}
+
+.project-6{
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height:180px;
+    width:250px;
+}
+
+.experience-head{
+    color:white;
+    font-weight: bolder;
+     margin-top:100px;
+    font-size: 60px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+}
+
+.text{
+color:purple;
+     margin-top:10px;
+    font-size: 30px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+}
+
+.experiences{
+    color:white;
+    margin-top:60px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
 }
