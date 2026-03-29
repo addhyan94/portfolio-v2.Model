@@ -5,13 +5,13 @@
 
 body {
     background-color: rgba(0, 0, 0, 0.941);
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar {
     background-color: rgba(128, 128, 128, 0.236);
     color: white;
-    height: 80px;
+    height: 66px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -19,15 +19,22 @@ body {
 }
 
 .sign {
-    height: 100px;
-    width: 120px;
+    padding-left: 80px;
+    height: 63px;
+    width: 78px;
     filter: invert(100%);
 }
 
 /* Nav bar ke buttons per hover effect aayega isse .................... */
+.hover-underline a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+
+}
+
 .hover-underline {
     /* font-size: 2rem; */
-    color: #ffffff;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -59,7 +66,7 @@ body {
 
 .menu {
     display: flex;
-    gap: 80px;
+    gap: 72px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -71,7 +78,8 @@ body {
     width: 200px;
     border-radius: 50%;
 }
-.image-circle img{
+
+.image-circle img {
     width: 321px;
 }
 
@@ -159,13 +167,14 @@ body {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*  My skils section open ............................................................. */
-  .skills-section {
+.skills-section {
     text-align: center;
     padding: 4rem 2rem;
-  }
+}
 
-  .section-label {
+.section-label {
     font-family: 'Syne', sans-serif;
     font-size: 0.72rem;
     font-weight: 700;
@@ -173,15 +182,16 @@ body {
     text-transform: uppercase;
     color: #c4bfbf;
     margin-bottom: 2.5rem;
-  }
+}
 
-  .skills-grid {
+.skills-grid {
     display: flex;
     gap: 1.2rem;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .skill-card {
+}
+
+.skill-card {
     position: relative;
     width: 105px;
     height: 90px;
@@ -190,8 +200,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .skill-icon {
+}
+
+.skill-icon {
     width: 80px;
     height: 80px;
     border-radius: 16px;
@@ -203,50 +214,52 @@ body {
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .skill-icon::before {
+.skill-icon::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 60%);
     opacity: 0;
     transition: opacity 0.3s;
-  }
+}
 
-  .skill-card:hover .skill-icon {
+.skill-card:hover .skill-icon {
     transform: translateY(-6px) scale(1.08);
     border-color: #333;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
-  }
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
 
-  .skill-card:hover .skill-icon::before { opacity: 1; }
+.skill-card:hover .skill-icon::before {
+    opacity: 1;
+}
 
-  .skill-icon img {
+.skill-icon img {
     width: 40px;
     height: 40px;
     object-fit: contain;
     filter: grayscale(30%) brightness(0.85);
     transition: filter 0.3s;
-  }
+}
 
-  .skill-card:hover .skill-icon img {
+.skill-card:hover .skill-icon img {
     filter: grayscale(0%) brightness(1.1);
-  }
+}
 
-  .skill-icon svg {
+.skill-icon svg {
     width: 38px;
     height: 38px;
     transition: filter 0.3s, transform 0.3s;
     filter: brightness(0.75);
-  }
+}
 
-  .skill-card:hover .skill-icon svg {
+.skill-card:hover .skill-icon svg {
     filter: brightness(1.2);
     transform: scale(1.05);
-  }
+}
 
-  .skill-tooltip {
+.skill-tooltip {
     position: absolute;
     bottom: -36px;
     left: 50%;
@@ -264,9 +277,9 @@ body {
     pointer-events: none;
     transition: all 0.2s ease;
     z-index: 10;
-  }
+}
 
-  .skill-tooltip::before {
+.skill-tooltip::before {
     content: '';
     position: absolute;
     top: -5px;
@@ -275,36 +288,60 @@ body {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 5px solid #2a2a2a;
-  }
+}
 
-  .skill-card:hover .skill-tooltip {
+.skill-card:hover .skill-tooltip {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
-  }
+}
 
-  .skill-card[data-skill="html"]:hover .skill-icon { box-shadow: 0 16px 40px rgba(227,76,38,0.2); }
-  .skill-card[data-skill="css"]:hover .skill-icon  { box-shadow: 0 16px 40px rgba(38,77,228,0.2); }
-  .skill-card[data-skill="js"]:hover .skill-icon   { box-shadow: 0 16px 40px rgba(247,223,30,0.2); }
-  .skill-card[data-skill="python"]:hover .skill-icon { box-shadow: 0 16px 40px rgba(55,118,171,0.2); }
-  .skill-card[data-skill="git"]:hover .skill-icon  { box-shadow: 0 16px 40px rgba(240,80,50,0.2); }
-  .skill-card[data-skill="github"]:hover .skill-icon { box-shadow: 0 16px 40px rgba(255,255,255,0.1); }
-  .skill-card[data-skill="figma"]:hover .skill-icon { box-shadow: 0 16px 40px rgba(162,89,255,0.2); }
-  .skill-card[data-skill="cpp"]:hover .skill-icon  { box-shadow: 0 16px 40px rgba(0,89,156,0.25); }
+.skill-card[data-skill="html"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(227, 76, 38, 0.2);
+}
 
-   .github-stats {
-  display: flex;
-  gap: 5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 4.5rem;
-  padding: 0 1rem;
+.skill-card[data-skill="css"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(38, 77, 228, 0.2);
+}
+
+.skill-card[data-skill="js"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(247, 223, 30, 0.2);
+}
+
+.skill-card[data-skill="python"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(55, 118, 171, 0.2);
+}
+
+.skill-card[data-skill="git"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(240, 80, 50, 0.2);
+}
+
+.skill-card[data-skill="github"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(255, 255, 255, 0.1);
+}
+
+.skill-card[data-skill="figma"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(162, 89, 255, 0.2);
+}
+
+.skill-card[data-skill="cpp"]:hover .skill-icon {
+    box-shadow: 0 16px 40px rgba(0, 89, 156, 0.25);
+}
+
+.github-stats {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4.5rem;
+    padding: 0 1rem;
 }
 
 .github-stats img {
-  border-radius: 12px;
-  height: 170px;
-  border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    height: 170px;
+    border: 1px solid #1f1f1f;
 }
+
 /*  My skils section Close ............................................................. */
 .projectss {
     display: grid;
@@ -326,13 +363,19 @@ body {
     color: white;
 }
 
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6 {
     border: 1px solid white;
     border-radius: 20px;
     text-align: center;
     height: 180px;
     width: 250px;
 }
+
 .main-about-section {
     margin: auto;
     height: 500px;
@@ -343,8 +386,9 @@ body {
     border: 1px solid white;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-top: 80px; */
+    margin-top: 80px;
 }
+
 .aboutme-head {
     color: white;
     font-weight: bolder;
@@ -353,6 +397,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
 .about-text {
     align-items: center;
     justify-content: center;
@@ -363,4 +408,27 @@ body {
     text-align: center;
     flex-wrap: wrap;
     display: flex;
+}
+
+/* Contact section................................................................. */
+.contect-section {
+    background-color: rgba(128, 128, 128, 0.236);
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+
+}
+
+.contact {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border: 1px dotted white;
+}
+
+.ct-hed {
+    color: white;
+    font-family: "m-Arial", Helvetica, sans-serif;
+    text-transform: uppercase;
+text-indent: 8%;
 }
