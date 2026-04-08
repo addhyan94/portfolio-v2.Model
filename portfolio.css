@@ -133,9 +133,9 @@ html {
     margin-top: 58px;
 }
 
-/* From Uiverse.io by nikk7007 */ 
+/* UI design uthaya gaya hai kahi se ..... */ 
 .bubbles {
-  --c1: #212121; /* Recommendation: same background color */
+  --c1: #212121; 
   --c2: #8685ef;
   --size-letter: 24px;
   padding: 0.5em 1em;
@@ -199,7 +199,7 @@ html {
   filter: brightness(0.9);
 }
 
-
+/* ........................................................................................ */
 .skill-head {
     color: white;
     display: flex;
