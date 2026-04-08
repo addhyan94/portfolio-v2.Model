@@ -7,9 +7,11 @@ body {
     background-color: rgba(0, 0, 0, 0.941);
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
-  scroll-behavior: smooth;
+
+html {
+    scroll-behavior: smooth;
 }
+
 .nav-bar {
     background-color: rgba(128, 128, 128, 0.236);
     color: white;
@@ -24,6 +26,7 @@ html{
     padding-left: 80px;
     height: 63px;
     width: 78px;
+    
     filter: invert(100%);
 }
 
@@ -126,26 +129,76 @@ html{
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 80px;
+    margin-top: 58px;
 }
 
-.button-1 {
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 20px 50px 20px 50px;
-    margin-top: 50px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+/* From Uiverse.io by nikk7007 */ 
+.bubbles {
+  --c1: #212121; /* Recommendation: same background color */
+  --c2: #8685ef;
+  --size-letter: 24px;
+  padding: 0.5em 1em;
+  font-size: var(--size-letter);
+
+  background-color: transparent;
+  border: calc(var(--size-letter) / 6) solid var(--c2);
+  border-radius: 1.2em;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+  transition: 300ms cubic-bezier(0.83, 0, 0.17, 1);
 }
 
-.button-2 {
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 20px 50px 20px 50px;
-    margin-top: 50px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+.bubbles > .text {
+  font-weight: 700;
+  color: var(--c2);
+  position: relative;
+  z-index: 1;
+  transition: color 700ms cubic-bezier(0.83, 0, 0.17, 1);
 }
+
+.bubbles::before {
+  top: 0;
+  left: 0;
+}
+
+.bubbles::after {
+  top: 100%;
+  left: 100%;
+}
+
+.bubbles::before,
+.bubbles::after {
+  content: "";
+  width: 150%;
+  aspect-ratio: 1/1;
+  scale: 0;
+  transition: 1000ms cubic-bezier(0.76, 0, 0.24, 1);
+
+  background-color: var(--c2);
+  border-radius: 50%;
+
+  position: absolute;
+  translate: -50% -50%;
+}
+
+.bubbles:hover {
+  & > span {
+    color: var(--c1);
+  }
+  &::before,
+  &::after {
+    scale: 1;
+  }
+}
+
+.bubbles:active {
+  scale: 0.98;
+  filter: brightness(0.9);
+}
+
 
 .skill-head {
     color: white;
@@ -347,7 +400,7 @@ html{
 /*  My skils section Close ............................................................. */
 .projectss {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, auto);
     /* 2 boxes per row */
     justify-content: center;
     /* center align */
@@ -358,7 +411,7 @@ html{
 
 .project-head {
     font-weight: bolder;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -374,9 +427,57 @@ html{
     border: 1px solid white;
     border-radius: 20px;
     text-align: center;
-    height: 180px;
-    width: 250px;
+    width: 360px;
+    height: 450px;
 }
+
+.project-1 {
+    background-image: url(Posters/Fresher\ Party\ Project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 319px;
+    height: 443px;
+    cursor: pointer;
+
+}
+
+.project-1:hover,.project-2:hover,.project-3:hover,.project-5:hover,.project-6:hover{
+    box-shadow: 0px 0px 20px 0px red;
+    animation: backwards;
+}
+.project-2 {
+    background-image: url(Posters/Protfolio\ poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 319px;
+    height: 443px;
+    cursor: pointer;
+}
+.project-3 {
+    background-image: url(Posters/Netflix\ Clone\ Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 319px;
+    height: 443px;
+    cursor: pointer;
+}
+.project-5{
+    background-image: url(Posters/Web_Developement-series\ Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 319px;
+    height: 443px;
+    cursor: pointer;
+}
+.project-6{
+    background-image: url(Posters/Portfolio\ v2\ Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 319px;
+    height: 443px;
+    cursor: pointer;
+}
+
 
 .main-about-section {
     margin: auto;
@@ -432,5 +533,5 @@ html{
     color: white;
     font-family: "m-Arial", Helvetica, sans-serif;
     text-transform: uppercase;
-text-indent: 8%;
+    text-indent: 8%;
 }
