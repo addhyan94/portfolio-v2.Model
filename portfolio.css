@@ -399,9 +399,10 @@ html {
 
 /*  My skils section Close ............................................................. */
 .projectss {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    /* 2 boxes per row */
+    display: flex;
+    /* grid-template-columns: repeat(3, auto);
+    2 boxes per row */
+    flex-wrap:wrap;
     justify-content: center;
     /* center align */
     gap: 100px;
