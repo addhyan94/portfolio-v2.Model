@@ -600,7 +600,7 @@ html {
 /* Summit BTN ke liye Ui kahi se coppy kiya gaya hai ........................................... */
 .gradient-button {
     position: relative;
-    padding: 16px 32px;
+    padding: 18px 49px;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -610,6 +610,7 @@ html {
     border-radius: 50px;
     overflow: hidden;
     transition: transform 0.2s ease;
+    margin-bottom: 21px;
 }
 
 .gradient-button:hover {
@@ -900,6 +901,9 @@ html {
     align-items: center;
     color: white;
 }
+.crt-box{
+    background-color: rgba(128, 128, 128, 0.316);
+}
 
 /* Contect bala ka Media Quarie lag gayi hai bus ...................................... */
 @media (max-width:830px) {
@@ -930,5 +934,13 @@ html {
     .social-cards {
         margin: 20px auto 0px -20px;
 
+    }
+}
+@media (max-width:952px){ 
+
+     .Cpyright-secttion{
+        font-size: 10px;
+        width: fit-content;
+        gap: 5px;
     }
 }
