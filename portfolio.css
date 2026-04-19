@@ -401,6 +401,7 @@ html {
 /*  My skils section Close ............................................................. */
 
 /* Project section chalu ........................................................................... */
+
 .projectss {
     display: flex;
     /* grid-template-columns: repeat(3, auto);
@@ -413,16 +414,397 @@ html {
     color: white;
 }
 
+.projectss h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em 22.1776px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+:root {
+    --backcrd1: linear-gradient(#580b45, #8108a9, #180120, black);
+    --backcrd2: linear-gradient(#4f1c42, #692181, #211425, black);
+    --backcrd3: linear-gradient(#3e0c0c, #5f1111, #250505, black);
+    --backcrd4: linear-gradient(#083a8b, #11458e, #051943, black);
+}
+
+/* From Uiverse.io by JustCode14 */
+.flip-carddd {
+    background-color: transparent;
+    width: 288px;
+    height: 400px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.ptitle {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    line-height: 28px;
+
+}
+
+.title2 {
+    font-size: 1.6em;
+    line-height: 35px;
+
+}
+
+.title3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1.8em;
+}
+
+.title4 {
+    font-size: 1.5em;
+    line-height: 25px;
+}
+
+.flip-carddd-back SECTION {
+    padding: 15px;
+}
+
+.Disc1 {
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #aaa;
+    margin-bottom: 14px;
+    padding-left: -10px;
+}
+
+
+.FEATU1 {
+    line-height: 1.9em;
+    font-size: 1em;
+    text-align: left;
+    color: #aaa;
+    padding-left: 40px;
+}
+
+.FEATU2 {
+    line-height: 1.6em;
+    font-size: .88em;
+    text-align: left;
+    padding-inline-start: 8px;
+    color: #aaa;
+}
+
+.FEATU3 {
+    line-height: 1.9em;
+    font-size: .88em;
+    text-align: left;
+    padding-inline-start: 8px;
+    color: #aaa;
+}
+
+.FEATU4 {
+    line-height: 1.6em;
+    font-size: .88em;
+    text-align: left;
+    padding-inline-start: 8px;
+    color: #aaa;
+}
+
+.FEATU5 {
+    line-height: 1.9em;
+    font-size: .88em;
+    text-align: left;
+    padding-inline-start: 8px;
+    color: #aaa;
+}
+
+.lang1 {
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.lang3 {
+    font-size: large;
+}
+
+.lang4 {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.89em;
+}
+
+.flip-carddd-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transition-timing-function: cubic-bezier(0.61, 0.98, 0.48, 1.01);
+    transform-style: preserve-3d;
+}
+
+.flip-carddd:hover .flip-carddd-inner {
+    transform: rotate(180deg) rotateX(180deg);
+}
+
+.flip-carddd-front,
+.flip-carddd-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    /* padding: 15px; */
+}
+
+/* Ye hai fornt original card ki css jo original hai ........................................ */
+/* .flip-carddd-front {
+  background: #fff;
+  background-image: url(../Posters/Fresher\ Party\ Project.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.car1 .flip-carddd-front {
+    /* background: #fff; */
+    background-image: url(../Posters/Fresher\ Party\ Project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #000; */
+}
+
+.car2 .flip-carddd-front {
+    /* background: #fff; */
+    background-image: url(../Posters/Protfolio\ poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #000; */
+}
+
+.car3 .flip-carddd-front {
+    /* background: #fff; */
+    background-image: url(../Posters/Netflix\ Clone\ Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #000; */
+}
+
+.car4 .flip-carddd-front {
+    /* background: #fff; */
+    background-image: url(../Posters/Web_Developement-series\ Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #000; */
+}
+
+.car5 .flip-carddd-front {
+    /* background: #fff; */
+    background-image: url(../Posters/Portfolio\ v2\ Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #000; */
+}
+
+/* Ye hai Back original card ki css jo original hai ........................................ */
+
+/* .flip-carddd-back {
+  border: 1.8px solid #782b92;
+ // background: #00000091;
+  background: var(--backcrd1);
+  color: #fff;
+  transform: rotateY(180deg);
+} */
+
+.car1 .flip-carddd-back {
+    border: 1.8px solid #782b92;
+    /* background: #00000091; */
+    background: var(--backcrd1);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.car2 .flip-carddd-back {
+    border: 1.8px solid rgb(48, 3, 74);
+    /* background: #00000091; */
+    background: var(--backcrd2);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.car3 .flip-carddd-back {
+    border: 1.8px solid rgb(46, 1, 1);
+    /* background: #00000091; */
+    background: var(--backcrd3);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.car4 .flip-carddd-back {
+    border: 1.8px solid rgb(3, 45, 75);
+    /* background: #00000091; */
+    background: var(--backcrd4);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.car5 .flip-carddd-back {
+    border: 1.8px solid rgb(46, 1, 1);
+    /* background: #00000091; */
+    background: var(--backcrd4);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.btnns {
+    display: flex;
+    gap: 15px;
+    margin-block-start: 2rem;
+}
+
+.btn-single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-block-start: .6rem;
+}
+
+/* Live preview bala button ki style ............................................. */
+.buttonnn {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.30rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: .3rem .6rem;
+    padding-left: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+}
+
+.button__icon-wrapperrr {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.buttonnn:hover {
+    background-color: #000;
+}
+
+.buttonnn:hover .button__icon-wrapperrr {
+    color: #000;
+}
+
+.button__icon-svg--copyy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.buttonnn:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.buttonnn:hover .button__icon-svg--copyy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+}
+
+/* Github ke code ke liye style ....................................................... */
+
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+}
+
+.cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+
+
 .project-head {
     font-weight: bolder;
-    /* margin-top: 100px; */
+    
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
-}
-
-.project-1,
+    }
+    
+/*
+    .project-1,
 .project-2,
 .project-3,
 .project-4,
@@ -488,10 +870,11 @@ html {
     width: 319px;
     height: 443px;
     cursor: pointer;
-}
+} */
 
 /* About section chalu hua ........................................................... */
 .atb-line {
+    
     margin: 20px;
 }
 
@@ -901,7 +1284,8 @@ html {
     align-items: center;
     color: white;
 }
-.crt-box{
+
+.crt-box {
     background-color: rgba(128, 128, 128, 0.316);
 }
 
@@ -936,9 +1320,10 @@ html {
 
     }
 }
-@media (max-width:952px){ 
 
-     .Cpyright-secttion{
+@media (max-width:952px) {
+
+    .Cpyright-secttion {
         font-size: 10px;
         width: fit-content;
         gap: 5px;
