@@ -577,7 +577,7 @@ html {
 } */
 .car1 .flip-carddd-front {
     /* background: #fff; */
-    background-image: url(../Posters/Fresher\ Party\ Project.png);
+    background-image: url(Posters/Fresher\ Party\ Project.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* color: #000; */
@@ -585,7 +585,7 @@ html {
 
 .car2 .flip-carddd-front {
     /* background: #fff; */
-    background-image: url(../Posters/Protfolio\ poster.png);
+    background-image: url(Posters/Protfolio\ poster.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* color: #000; */
@@ -593,7 +593,7 @@ html {
 
 .car3 .flip-carddd-front {
     /* background: #fff; */
-    background-image: url(../Posters/Netflix\ Clone\ Poster.png);
+    background-image: url(Posters/Netflix\ Clone\ Poster.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* color: #000; */
@@ -601,7 +601,7 @@ html {
 
 .car4 .flip-carddd-front {
     /* background: #fff; */
-    background-image: url(../Posters/Web_Developement-series\ Poster.png);
+    background-image: url(Posters/Web_Developement-series\ Poster.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* color: #000; */
@@ -609,7 +609,7 @@ html {
 
 .car5 .flip-carddd-front {
     /* background: #fff; */
-    background-image: url(../Posters/Portfolio\ v2\ Poster.png);
+    background-image: url(Posters/Portfolio\ v2\ Poster.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* color: #000; */
