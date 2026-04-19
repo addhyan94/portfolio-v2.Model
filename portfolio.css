@@ -675,7 +675,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-        margin-block-start: .6rem;
+    margin-block-start: .6rem;
 }
 
 /* Live preview bala button ki style ............................................. */
@@ -796,13 +796,13 @@ html {
 
 .project-head {
     font-weight: bolder;
-    
+
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
-    }
-    
+}
+
 /*
     .project-1,
 .project-2,
@@ -874,7 +874,7 @@ html {
 
 /* About section chalu hua ........................................................... */
 .atb-line {
-    
+
     margin: 20px;
 }
 
