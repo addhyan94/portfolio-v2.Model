@@ -6,20 +6,37 @@
 body {
     background-color: rgba(0, 0, 0, 0.941);
     font-family: Arial, Helvetica, sans-serif;
+     margin-top: 55px; 
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: rgba(128, 128, 128, 0.236); */
+   backdrop-filter: blur(10px); /* main blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  z-index: 1000;
+}
 .nav-bar {
     background-color: rgba(128, 128, 128, 0.236);
     color: white;
-    height: 66px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 300px;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .sign {
