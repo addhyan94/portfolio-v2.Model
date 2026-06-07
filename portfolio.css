@@ -133,9 +133,27 @@ nav {
     font-size: 40px;
 }
 
-.highlight {
-    color: purple
-}
+    .color-change-text {
+            place-self: center;
+            background: linear-gradient(30deg, #00f, #0ff, rgb(71, 16, 212), rgb(140, 97, 233), rgb(255, 174, 0), #00f) -100%/ 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font: 0 clamp(2em, 10vw, 10em) exo, sans-serif;
+            animation: changer-text-anini 2s linear infinite
+        }
+
+        @keyframes changer-text-anini {
+            to {
+                background-position: 100%
+            }
+        }
+        @media (forced-colors: active) {
+            p {
+                background: #212121;
+                color: aquamarine
+            }
+        }
 
 .para-2 {
     display: flex;
@@ -1285,6 +1303,79 @@ nav {
 .crt-box {
     background-color: rgba(128, 128, 128, 0.316);
 }
+
+/* Go back button style...  */
+
+
+.back-to-up-button-style {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    /* position: relative; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.back-to-up-button-style.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-up-butoon-svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.back-to-up-butoon-svgIcon path {
+    fill: white;
+}
+
+.back-to-up-button-style:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: transparent;
+    align-items: center;
+}
+
+.back-to-up-button-style:hover .back-to-up-butoon-svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.back-to-up-button-style::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}
+
+.back-to-up-button-style:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+
 
 /* Contect bala ka Media Quarie lag gayi hai bus ...................................... */
 @media (max-width:830px) {
