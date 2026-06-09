@@ -10,7 +10,7 @@ button1.onclick = function () {
 
     let button2 = document.getElementById("buttonn2");
     button2.addEventListener("click", (e) => {
-        alert("CV add ni hui hai aabhi ....");
+        window.open("CV/Addhyan-CV.pdf", "_blank");
     })
 };
 
